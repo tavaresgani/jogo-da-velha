@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tela2">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Usuário"
+            android:inputType="text"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="80dp"
+            android:height="100dp"
+            android:background="#000000"
+            android:backgroundTint="#009688"
+            android:elegantTextHeight="true"
+            android:freezesText="false"
+            android:gravity="center_vertical"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#F9F9F9"
+            android:textSize="50sp"
+            app:layout_column="0"
+            app:layout_gravity="center|top"
+            app:layout_row="0"
+            tools:text="Login" />
+
+        <Button
+            android:id="@+id/btAcessar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="Acessar"
+            android:textSize="24sp"
+            app:layout_column="0"
+            app:layout_gravity="center"
+            app:layout_row="4"
+            tools:text="Acessar" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
